@@ -1,0 +1,5 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project DoseMate.xcodeproj -scheme DoseMate -destination "platform=iOS Simulator,name=iPhone 16 Pro" clean build
+
+2026-03-15 19:39:27.685 xcodebuild[8929:87474] Writing error result bundle to /var/folders/kv/_3_57zf93pb8mwxmypyt8qn00000gn/T/ResultBundle_2026-15-03_19-39-0027.xcresult
+xcodebuild: error: 'DoseMate.xcodeproj' does not exist.
