@@ -5,6 +5,7 @@ struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
     @State private var showingExportSheet = false
     @State private var showingAbout = false
+    @State private var showingContactSupport = false
     
     var body: some View {
         NavigationStack {
@@ -89,6 +90,22 @@ struct SettingsView: View {
                     }
                 }
                 
+                Section("Legal & Support") {
+                    Link(destination: URL(string: "https://dosemate-privacy.vercel.app")!) {
+                        Label("Privacy Policy", systemImage: "hand.raised.fill")
+                    }
+                    
+                    Button {
+                        showingContactSupport = true
+                    } label: {
+                        Label("Contact Support", systemImage: "envelope.fill")
+                    }
+                    
+                    Link(destination: URL(string: "https://dosemate-support.vercel.app")!) {
+                        Label("Help Center", systemImage: "lifepreserver")
+                    }
+                }
+                
                 Section {
                     VStack(spacing: AppTheme.Spacing.sm) {
                         Text("⚠️ Disclaimer")
@@ -106,6 +123,9 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .sheet(isPresented: $showingAbout) {
                 AboutView()
+            }
+            .sheet(isPresented: $showingContactSupport) {
+                ContactSupportView()
             }
         }
     }
