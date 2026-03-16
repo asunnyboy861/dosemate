@@ -403,16 +403,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseMate needs access to your health data to track GLP-1 medication injections, weight, and health metrics. Your data is stored privately on your device.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "DoseMate saves your injection records, weight measurements, and health data to help you track your GLP-1 medication journey.";
-				INFOPLIST_KEY_NSAppTransportSecurity = {
-					NSAllowsArbitraryLoads = NO;
-					NSExceptionDomains = {
-						"feedback-board.iocompile67692.workers.dev" = {
-							NSExceptionMinimumTLSVersion = "TLSv1.2";
-							NSExceptionRequiresForwardSecrecy = YES;
-							NSIncludesSubdomains = YES;
-						};
-					};
-				};
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,16 +434,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "DoseMate needs access to your health data to track GLP-1 medication injections, weight, and health metrics. Your data is stored privately on your device.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "DoseMate saves your injection records, weight measurements, and health data to help you track your GLP-1 medication journey.";
-				INFOPLIST_KEY_NSAppTransportSecurity = {
-					NSAllowsArbitraryLoads = NO;
-					NSExceptionDomains = {
-						"feedback-board.iocompile67692.workers.dev" = {
-							NSExceptionMinimumTLSVersion = "TLSv1.2";
-							NSExceptionRequiresForwardSecrecy = YES;
-							NSIncludesSubdomains = YES;
-						};
-					};
-				};
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
